@@ -18,6 +18,10 @@ margin: 0 auto;
     border-bottom: 1px ;
     text-align: center;
 }
+.row_item button{
+    width: 100%;
+    height: 100px;
+}
 .row_item:hover{
     background-color: darkgray;
     cursor: pointer;
@@ -74,7 +78,7 @@ width: 100%;
     box-sizing: border-box;
 
 }
-.favorBook{
+.favorBooks{
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
@@ -107,12 +111,30 @@ width: 100%;
  position: absolute;
 
 }
-.images::after{
+.liksBtn{
+    display: block; 
+    color: #2ea200;
+    text-align: center;
+    /* background-color: grey; */
+    line-height: 100%;
+}
+.fDiv{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.read img{
+    width: 500px;
+    height: 500px;
+
+}
+/* .images::after{
     width: 28px;
     height: 28px;
-    content: url(item/like.svg);
+    content: url(../testwork/item/like2.png);
     position: relative;
     top: 335px;
     left: -90px;
     
-}
+} */
