@@ -1,24 +1,25 @@
 @font-face {
-  font-family: Monteserrat;
+  font-family: "Monteserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: MonteserratBold;
+  font-family: "MonteserratBold";
   src: url(../fonts/MontserratBold.ttf);
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(../fonts/Roboto.ttf);
 }
 
-/* line 18, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 17, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 body {
   margin: 0;
 }
 
-/* line 21, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 20, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 #container {
   display: flex;
   flex-direction: column;
@@ -29,20 +30,20 @@ body {
 }
 
 @media screen and (max-width: 769px) {
-  /* line 21, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 20, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   #container {
     width: 768px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 21, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 20, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   #container {
     max-width: 320px;
   }
 }
 
-/* line 39, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 38, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header {
   background: url(../images/vector_smart_object_8.png);
   width: 100%;
@@ -53,14 +54,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 39, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 38, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header {
     width: 768px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 39, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 38, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header {
     background-size: cover;
     width: 320px;
@@ -72,7 +73,7 @@ body {
   }
 }
 
-/* line 60, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 59, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_nav {
   height: 38px;
   display: flex;
@@ -84,7 +85,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 60, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 59, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header_nav {
     width: 768px;
     width: 670px;
@@ -92,7 +93,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 60, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 59, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header_nav {
     max-width: 320px;
     width: 320px;
@@ -100,13 +101,13 @@ body {
   }
 }
 
-/* line 76, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 75, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_nav .logo {
   display: block;
 }
 
 @media screen and (max-width: 320px) {
-  /* line 76, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 75, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header_nav .logo {
     display: block;
     position: absolute;
@@ -115,9 +116,9 @@ body {
   }
 }
 
-/* line 87, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 86, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_nav .logo a {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: 900;
@@ -128,9 +129,9 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 87, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 86, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header_nav .logo a {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
@@ -140,7 +141,7 @@ body {
   }
 }
 
-/* line 108, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 107, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_login {
   display: flex;
   justify-content: space-between;
@@ -148,7 +149,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 108, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 107, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .header_login {
     width: 50%;
     margin: 0 auto;
@@ -156,15 +157,15 @@ body {
   }
 }
 
-/* line 117, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 116, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_login a {
   text-align: center;
   text-decoration: none;
 }
 
-/* line 124, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 123, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_login__logIn {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 38px;
   font-weight: 900;
@@ -172,9 +173,9 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 133, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 132, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .header_login__signUp {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 34px;
   font-weight: 900;
@@ -186,7 +187,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 147, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 146, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content {
   display: block;
   margin: 141px auto;
@@ -195,7 +196,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 147, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 146, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content {
     display: flex;
     flex-direction: column;
@@ -207,9 +208,9 @@ body {
   }
 }
 
-/* line 162, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 161, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content h2 {
-  font-family: Montserrat-Bold, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 53px;
   margin: 0;
   font-weight: 600;
@@ -219,9 +220,8 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 162, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 161, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content h2 {
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -229,10 +229,10 @@ body {
   }
 }
 
-/* line 177, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 175, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content h3 {
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 300;
@@ -241,10 +241,10 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 177, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 175, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content h3 {
     width: 70%;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 300;
@@ -253,12 +253,12 @@ body {
   }
 }
 
-/* line 195, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 193, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content a {
   letter-spacing: 0.5px;
   justify-content: center;
   display: flex;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 700;
@@ -272,9 +272,9 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 195, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 193, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content a {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 1.2;
     font-weight: 700;
@@ -286,7 +286,7 @@ body {
   }
 }
 
-/* line 224, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 222, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-step {
   display: flex;
   flex-direction: column;
@@ -294,16 +294,16 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 224, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 222, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-step {
     margin-top: 35px;
   }
 }
 
-/* line 232, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 230, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-step_h2 {
   margin: 0;
-  font-family: Montserrat,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   letter-spacing: 1px;
   line-height: 22px;
@@ -312,7 +312,7 @@ body {
   text-align: center;
 }
 
-/* line 243, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 241, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-images {
   display: flex;
   justify-content: center;
@@ -320,7 +320,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 243, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 241, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-images {
     justify-content: space-around;
     flex-direction: column;
@@ -329,24 +329,24 @@ body {
   }
 }
 
-/* line 254, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 252, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content_img {
   width: 300px;
   height: 400px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   border-radius: 4px;
-  margin: 5px 0;
+  margin: 5px 10px;
 }
 
 @media screen and (max-width: 320px) {
-  /* line 254, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 252, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content_img {
     padding: 0;
     margin-bottom: 10px;
   }
 }
 
-/* line 265, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 263, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step {
   display: flex;
   flex-direction: column;
@@ -357,7 +357,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 265, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 263, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step {
     padding: 0 20px 0;
     margin-bottom: 10px;
@@ -365,7 +365,7 @@ body {
   }
 }
 
-/* line 280, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 278, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step a {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
@@ -385,15 +385,15 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 280, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 278, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step a {
     margin-bottom: 5px;
   }
 }
 
-/* line 301, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 299, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step h3 {
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
@@ -401,9 +401,9 @@ body {
   letter-spacing: 0.9px;
 }
 
-/* line 310, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 308, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step p {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
@@ -412,19 +412,19 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 310, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 308, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step p {
     margin-bottom: 5px;
   }
 }
 
-/* line 324, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 322, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step_1 {
   background-image: url(../images/rectangle_4_24.png);
 }
 
 @media screen and (max-width: 768px) {
-  /* line 324, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 322, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step_1 {
     width: 236px;
     height: 401px;
@@ -432,20 +432,20 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 324, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 322, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step_1 {
     width: 300px;
     height: 240px;
   }
 }
 
-/* line 336, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 334, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step_2 {
   background-image: url(../images/rectangle_4_40.png);
 }
 
 @media screen and (max-width: 768px) {
-  /* line 336, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 334, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step_2 {
     width: 236px;
     height: 401px;
@@ -453,20 +453,20 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 336, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 334, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step_2 {
     width: 300px;
     height: 240px;
   }
 }
 
-/* line 348, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 346, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .step_3 {
   background-image: url(../images/rectangle_4_49.png);
 }
 
 @media screen and (max-width: 768px) {
-  /* line 348, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 346, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step_3 {
     width: 236px;
     height: 401px;
@@ -474,14 +474,14 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 348, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 346, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .step_3 {
     width: 300px;
     height: 240px;
   }
 }
 
-/* line 360, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 358, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-partner {
   margin-top: 98px;
   text-align: center;
@@ -489,9 +489,9 @@ body {
   flex-direction: column;
 }
 
-/* line 365, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 363, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-partner h2 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
@@ -500,7 +500,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 365, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 363, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-partner h2 {
     padding: 0;
     margin: 16px auto 10px;
@@ -510,14 +510,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 360, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 358, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-partner {
     display: block;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 360, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 358, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-partner {
     display: flex;
     flex-direction: column;
@@ -525,7 +525,7 @@ body {
   }
 }
 
-/* line 390, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 388, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-line {
   display: flex;
   width: 840px;
@@ -535,7 +535,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 390, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 388, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-line {
     max-width: 510px;
     height: 100%;
@@ -547,24 +547,24 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 390, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 388, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-line {
     width: 320px;
     display: flex;
     flex-direction: column;
     margin: 3px auto;
   }
-  /* line 410, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 408, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-line .partner:nth-child(2) {
     order: 1;
   }
-  /* line 414, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 412, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-line .partner:nth-child(4) {
     order: 4;
   }
 }
 
-/* line 422, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 420, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .partner {
   align-items: center;
   display: flex;
@@ -575,14 +575,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 422, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 420, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .partner {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 422, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 420, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .partner {
     max-width: 320px;
     width: 100%;
@@ -590,12 +590,12 @@ body {
   }
 }
 
-/* line 444, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 442, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .partner .after {
   height: 120px;
 }
 
-/* line 447, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 445, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .partner .after1::after {
   content: url("../images/ellipse_2_71.png");
   display: block;
@@ -606,7 +606,7 @@ body {
   height: 40px;
 }
 
-/* line 457, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 455, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .partner .icon1::after {
   content: url(../images/shape_128_77.png);
   display: block;
@@ -620,7 +620,7 @@ body {
   float: right;
 }
 
-/* line 470, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 468, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .after2::after {
   content: url("../images/ellipse_2_83.png");
   display: block;
@@ -631,7 +631,7 @@ body {
   height: 40px;
 }
 
-/* line 480, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 478, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .icon2::after {
   content: url(../images/shape_153_106.png);
   display: block;
@@ -645,7 +645,7 @@ body {
   float: right;
 }
 
-/* line 493, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 491, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .after3::after {
   content: url("../images/ellipse_2_91.png");
   display: block;
@@ -656,7 +656,7 @@ body {
   height: 40px;
 }
 
-/* line 502, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 500, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .icon3::after {
   content: url(../images/shape_155_108.png);
   display: block;
@@ -670,7 +670,7 @@ body {
   float: right;
 }
 
-/* line 514, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 512, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .after4::after {
   content: url("../images/ellipse_2_99.png");
   display: block;
@@ -681,7 +681,7 @@ body {
   height: 40px;
 }
 
-/* line 523, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 521, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .icon4::after {
   content: url(../images/shape_170_110.png);
   display: block;
@@ -695,15 +695,15 @@ body {
   float: right;
 }
 
-/* line 535, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 533, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 img {
   width: 120px;
   height: 120px;
 }
 
-/* line 539, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 537, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 h4 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 700;
@@ -711,9 +711,9 @@ h4 {
   margin-bottom: 4px;
 }
 
-/* line 547, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 545, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 p {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 300;
@@ -721,16 +721,16 @@ p {
   width: 220px;
 }
 
-/* line 556, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 554, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .parther-btn {
   display: flex;
   justify-content: center;
 }
 
-/* line 559, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 557, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .parther-btn a {
   text-decoration: none;
-  font-family: Montserrat,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1px;
   font-size: 15px;
   line-height: 40px;
@@ -744,7 +744,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 559, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 557, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .parther-btn a {
     width: 280px;
     height: 36px;
@@ -754,7 +754,7 @@ p {
   }
 }
 
-/* line 588, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 586, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-discover {
   margin: 85px auto;
   text-align: center;
@@ -764,10 +764,10 @@ p {
   width: 960px;
 }
 
-/* line 595, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 593, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-discover h2 {
   margin: 14px 0 30px 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
@@ -776,14 +776,14 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 595, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 593, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-discover h2 {
     margin: 14px 0 25px 0;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 595, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 593, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-discover h2 {
     max-width: 320px;
     margin: 20px 0 18px 0;
@@ -791,14 +791,14 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 588, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 586, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-discover {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 588, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 586, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-discover {
     max-width: 320px;
     width: 100%;
@@ -806,7 +806,7 @@ p {
   }
 }
 
-/* line 619, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 617, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .img-block {
   display: flex;
   flex-direction: row;
@@ -814,10 +814,10 @@ p {
   width: 100%;
 }
 
-/* line 624, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 622, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .img-block p {
   position: absolute;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   line-height: 1.2;
   text-align: center;
@@ -828,7 +828,7 @@ p {
   width: 100%;
 }
 
-/* line 637, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 635, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-img {
   position: relative;
   display: flex;
@@ -838,21 +838,21 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 637, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 635, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-img {
     width: 100%;
     margin: 0px 0px 10px 0;
   }
 }
 
-/* line 649, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 647, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .img_small img {
   width: 300px;
   height: 310px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 649, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 647, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .img_small img {
     width: 236px;
     height: 311px;
@@ -860,7 +860,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 649, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 647, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .img_small img {
     width: 300px;
     height: 120px;
@@ -869,14 +869,14 @@ p {
   }
 }
 
-/* line 666, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 664, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .img_big img {
   width: 620px;
   height: 310px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 666, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 664, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .img_big img {
     width: 492px;
     height: 311px;
@@ -884,7 +884,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 666, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 664, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .img_big img {
     max-width: 320px;
     width: 300px;
@@ -894,7 +894,7 @@ p {
   }
 }
 
-/* line 683, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 681, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-input {
   display: flex;
   flex-direction: column;
@@ -902,9 +902,9 @@ p {
   text-align: center;
 }
 
-/* line 688, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 686, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-input h2 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 23px;
   line-height: 1.2;
   font-weight: 700;
@@ -912,9 +912,9 @@ p {
   margin: 0;
 }
 
-/* line 697, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 695, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-input h4 {
-  font-family: Roboto,sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -923,20 +923,20 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 697, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 695, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-input h4 {
     margin-top: 30px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 697, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 695, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-input h4 {
     margin-top: 13px;
   }
 }
 
-/* line 712, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 710, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-input form {
   width: 410px;
   height: 42px;
@@ -948,7 +948,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 712, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 710, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-input form {
     flex-direction: column;
     margin: 15px auto  0;
@@ -957,7 +957,7 @@ p {
   }
 }
 
-/* line 729, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 727, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-input form input[type="text"] {
   margin-right: 10px;
   width: 240px;
@@ -966,7 +966,7 @@ p {
   border: 1px solid #cccccc;
   box-shadow: 0px 1px 0px 0px #eeeeee;
   border-radius: 4px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
@@ -975,7 +975,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 729, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 727, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-input form input[type="text"] {
     text-align: center;
     flex-direction: column;
@@ -988,13 +988,13 @@ p {
   }
 }
 
-/* line 755, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 753, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .content-input form input[type="button"] {
   width: 160px;
   height: 40px;
   background-color: #ff4e50;
   border-radius: 20px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
@@ -1003,7 +1003,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 755, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 753, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .content-input form input[type="button"] {
     text-align: center;
     flex-direction: column;
@@ -1018,7 +1018,7 @@ p {
   }
 }
 
-/* line 783, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 781, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .footer {
   width: 100%;
   display: flex;
@@ -1028,14 +1028,14 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 783, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 781, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .footer {
     max-width: 320px;
     margin-top: 40px;
   }
 }
 
-/* line 797, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 795, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .footer_content {
   border-top: 4px solid #ff4e50;
   width: 100%;
@@ -1046,37 +1046,37 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 797, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 795, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .footer_content {
     flex-direction: column;
     text-align: center;
   }
 }
 
-/* line 811, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 809, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .logo_footer {
   display: block;
   margin-left: 17.3%;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 811, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 809, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .logo_footer {
     margin-left: 5%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 811, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 809, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .logo_footer {
     max-width: 320px;
     margin: 0;
   }
 }
 
-/* line 820, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 818, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .logo_footer h3 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
@@ -1087,34 +1087,34 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 820, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 818, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .logo_footer h3 {
     max-width: 320px;
     margin-bottom: 18px;
   }
 }
 
-/* line 834, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 832, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .company {
   display: block;
   margin-left: 8%;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 834, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 832, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .company {
     margin-left: 14%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 834, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 832, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .company {
     margin: 0;
   }
 }
 
-/* line 844, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 842, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .company ul {
   padding-left: 0;
   list-style-type: none;
@@ -1126,7 +1126,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 844, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 842, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .company ul {
     flex-direction: row;
     align-items: center;
@@ -1134,25 +1134,25 @@ p {
   }
 }
 
-/* line 857, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 855, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .company ul li {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 860, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 858, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .company ul li a {
   text-decoration: none;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: #666666;
 }
 
-/* line 872, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 870, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .head_h3 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 700;
@@ -1160,34 +1160,38 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  /* line 872, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 870, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .head_h3 {
     margin: 0;
+    font-size: 14.1px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
   }
 }
 
-/* line 882, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 884, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .partners {
   display: block;
   margin-left: 12.75%;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 882, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 884, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .partners {
     margin-left: 14.5%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 882, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 884, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .partners {
     max-width: 320px;
     margin: 17px 0;
   }
 }
 
-/* line 894, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 896, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .designer {
   display: flex;
   justify-content: start;
@@ -1198,14 +1202,14 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 894, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 896, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .designer {
     margin-left: 16.4%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 894, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+  /* line 896, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
   .designer {
     max-width: 320px;
     margin: 0;
@@ -1213,9 +1217,9 @@ p {
   }
 }
 
-/* line 908, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 910, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .designer h3 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   line-height: 1.2;
   font-weight: 700;
@@ -1226,7 +1230,7 @@ p {
   margin-bottom: 9px;
 }
 
-/* line 919, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
+/* line 921, D:/Downloads/OSPanel/domains/localhost/testwork/scss/style.scss */
 .designer img {
   width: 110px;
   height: 24px;
