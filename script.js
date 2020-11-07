@@ -52,10 +52,11 @@ function ShowMyBook(){
     readBooks.style.display = 'none';
     myFavorbooks.style.display ='none';
 }
+
 function read(){
     let parent = document.querySelector('.thisBook');
-    let elem1 =parent.querySelector('.images');
-    let clon = elem1.cloneNode(true);
+    let elem1 = parent.querySelector('.images');
+    let clon =   elem1.cloneNode(true);
     let NewDiv = document.createElement("div");
     NewDiv.innerHTML=""
     readBooks.append(NewDiv);
