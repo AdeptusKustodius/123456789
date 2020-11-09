@@ -15,16 +15,31 @@
                 <li class=" col row_item item_favorite-books"><button  onclick="ShowMyFavorBook()"  id="favorite" type="submit"> <h2>favorite books</h2></button></li>
                 <li class=" col row_item item_My-books"><button id="myBooks" onclick="ShowMyBook()"  type="submit"><h2>My Books</h2></button></li>
                 <li class=" col row_item item_Read-books"><button onclick="readBook()"  id="reading"  type="submit"><h2>Reading</h2></button></li>
-                <li    class=" col row_item download"><h2>download</h2>
+                <li class="col row_item item_downloadtnb"><button id="down" onclick="down()" type="button" ><h2>download/writing</h2></button> </li>
+ 
+            </ul>
+            <ul class="row col-xl download">
+                <li    class=" col row_item download"><h2>download/writing</h2>
                     <div class="dowmload-item">
+                        <p class="column">
+                            <p> <input type="radio" name="panel" onclick="checket2()" id="myWriteFile"value="Writing" ><label for="myWriteFile">написать</label></p>
+                        
+                           <p> <input type="radio" name="panel" onclick="checket1()" id="myFileDown" value="downLoad" checked ><label for="myFileDown">Загрузить</label></p>
+                          </p>
                         <form enctype="multipart/form-data" method="post">
-                            <p><input type="file" id="myFile" multiple accept="asm, asp" onchange="uploadImage(event)">
-                                
-                                
-                                
-                                
-                            <input  id="down" type="submit" value="Отправить"></p>
-                    </div></li>
+                            <p class="showMe1">
+                                <input type="file" id="myFile" multiple accept="asm, asp,">
+                                <input onclick="uploadFile()" id="down" type="button" value="Отправить">
+                            </p>
+                            <p class="showMe2 column">
+                                <input type="text" name="textName" id="id0" placeholder="Название">
+                                <textarea name="writing" id="id1" cols="70" rows="11" placeholder="пиши сюда что-нибудь интересное "></textarea><label for="id2">отправить</label>
+                                <input type="button" name="start" id="id2" onclick="uploadText()" placeholder="отправить">
+
+                        </form>
+                    </div>
+                
+                </li> 
             </ul>
             <div class=" item-content">
             

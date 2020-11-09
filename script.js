@@ -2,29 +2,49 @@
 let myBooks = document.body.querySelector('.myBooks');
 let myFavorbooks = document.body.querySelector('.favorBooks');
 let readBooks = document.body.querySelector('.readBook')
-function uploadImage(event){
-    let reader = new FileReader();
-    let name = event.target.files[0].name;
-    reader.addEventListener("load",function(){
-        if(this.result && localStorage){
-            window.localStorage.setItem(name,this.result);
-        }else{
-            alert('не работает блеать!!!!');
-        }
+let download = document.body.querySelector('.download')
 
-    });
-    reader.readAsDataURL(event.target.files[0]);
+function uploadText() {
+    let nameText = document.querySelector("input[type=text]").value;
+    let someText = document.querySelector("textarea[name=writing]").value;
+    localStorage.setItem("name",nameText);
+    localStorage.setItem("text",someText);
+    console.log('test')
+    console.log(nameText)
+    console.log(someText)
 }
+function uploadFile() {
+    let file = document.querySelector("input[type=file]").value;
+    localStorage.setItem("file",file);
+    window.onstorage= event =>{
+        if(event.ket !='file')return;
+        (event.key + ':' +event.value +"at" +event.url);
+    };
+    
+    console.log(file)
+}
+// function uploadFile(){
+//     let reader = new FileReader();
+//     let name = event.target.files[0].name;
+//     reader.addEventListener("load",function(){
+//         if(this.result && localStorage){
+//             window.localStorage.setItem(name,this.result);
+//         }else{
+//             alert('не работает ');
+//         }
+
+//     });
+//     reader.readAsDataURL(event.target.files[0]);
+//     console.log('unload')
+// }
+
 function ShowMyBook(){
-    let img = document.querySelector('.fDiv');
-    if(myBooks.contains(img)){
-        myBooks.prepend(img);
-    }else if (myBooks.contains(img)==false)
-     {
+     
+    let span = document.querySelector('.fDiv');
 
     for (let i = 0; i < window.localStorage.length; i++) {
         let res = window.localStorage.getItem(window.localStorage.key(i));	 
-        let image = new Image();
+        let image = new  Image();
         let btnlks = document.createElement("button");
         let read = document.createElement("button")
         let fdiv = document.createElement("div");
@@ -51,6 +71,7 @@ function ShowMyBook(){
     myBooks.style.display = 'flex';
     readBooks.style.display = 'none';
     myFavorbooks.style.display ='none';
+    download.style.display ='none';
 }
 
 function read(){
@@ -66,11 +87,11 @@ function read(){
 function replace(){
 
     console.log('алярма!')
-    // let frame = document.createElement('iframe');
-    // frame.setAttribute('src', 'clon')
-    // frame.setAttribute('name','readingFrame')
-    // frame.innerHTML = NewDiv.append(clon);
-    // NewDiv.parentNode.replaceChild(frame, NewDiv);
+    let frame = document.createElement('iframe');
+    frame.setAttribute('src', 'clon')
+    frame.setAttribute('name','readingFrame')
+    frame.innerHTML = NewDiv.append(clon);
+    NewDiv.parentNode.replaceChild(frame, NewDiv);
 }
  setTimeout(replace(), 100);
 }
@@ -92,13 +113,39 @@ function likes(){
 
 
 }
+function down() {
+    myBooks.style.display = 'none';
+    myFavorbooks.style.display='none';
+    readBooks.style.display = 'none';
+    download.style.visibility = 'visible';
+    download.style.display ='flex';
+}
 function readBook(){
+
     myBooks.style.display = 'none';
     myFavorbooks.style.display='none';
     readBooks.style.display = 'flex';
+    download.style.visibility = 'hidden';
+    download.style.display='none';
 }
 function ShowMyFavorBook(){
     myBooks.style.display = 'none';
     readBooks.style.display='none';
     myFavorbooks.style.display = 'flex';
+    download.style.visibility = 'hidden';
+    download.style.display='none';
 }
+function checket1(){
+    let a=document.querySelector('.showMe2');
+    let b=document.querySelector('.showMe1');
+    b.style.visibility='visible';
+    a.style.visibility='hidden';
+
+    }
+    function checket2() {
+        let c=document.querySelector('.showMe1');
+        let d=document.querySelector('.showMe2');
+        d.style.visibility='visible';
+        c.style.visibility='hidden';
+    }
+    checket1()
