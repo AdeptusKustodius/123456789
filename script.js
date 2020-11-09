@@ -19,7 +19,7 @@ function uploadFile() {
     window.onstorage= event =>{
         if(event.ket !='file')return;
         (event.key + ':' +event.value +"at" +event.url);
-    };
+    }
     
     console.log(file)
 }
@@ -41,6 +41,10 @@ function uploadFile() {
 function ShowMyBook(){
      
     let span = document.querySelector('.fDiv');
+    if(myBooks.contains(span)){
+        myBooks.prepend(span);
+    }else if (myBooks.contains(span)==false)
+     {
 
     for (let i = 0; i < window.localStorage.length; i++) {
         let res = window.localStorage.getItem(window.localStorage.key(i));	 
