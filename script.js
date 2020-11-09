@@ -15,70 +15,44 @@ function uploadText() {
 }
 function uploadFile() {
     let file = document.querySelector("input[type=file]").value;
-    localStorage.setItem("file",file);
-    window.onstorage= event =>{
-        if(event.ket !='file')return;
-        (event.key + ':' +event.value +"at" +event.url);
-    }
-    
+    window.localStorage.setItem(name,this.file);
     console.log(file)
 }
-// function uploadFile(){
-//     let reader = new FileReader();
-//     let name = event.target.files[0].name;
-//     reader.addEventListener("load",function(){
-//         if(this.result && localStorage){
-//             window.localStorage.setItem(name,this.result);
-//         }else{
-//             alert('не работает ');
-//         }
 
-//     });
-//     reader.readAsDataURL(event.target.files[0]);
-//     console.log('unload')
-// }
-
-function ShowMyBook(){
-     
-    let span = document.querySelector('.fDiv');
-    if(myBooks.contains(span)){
-        myBooks.prepend(span);
-    }else if (myBooks.contains(span)==false)
-     {
-
-    for (let i = 0; i < window.localStorage.length; i++) {
-        let res = window.localStorage.getItem(window.localStorage.key(i));	 
-        let image = new  Image();
-        let btnlks = document.createElement("button");
-        let read = document.createElement("button")
-        let fdiv = document.createElement("div");
-        fdiv.innerHTML = "";
-        read.innerHTML = "Read Book"
-        btnlks.innerHTML = "like!";
-        fdiv.setAttribute('class','fDiv thisBook');
-        read.setAttribute('class','readBtn');
-        read.setAttribute('id','read');
-        read.setAttribute('onclick','read()');
-        btnlks.setAttribute('class','liksBtn');
-        btnlks.setAttribute('id','like');
-        btnlks.setAttribute('onclick','likes()');
-        image.src = res;
-        image.setAttribute('class','images');
-        myBooks.append(fdiv)
-        fdiv.append(image);
-        fdiv.append(btnlks);
-        fdiv.append(read);
-}
-
-
-}
-    myBooks.style.display = 'flex';
-    readBooks.style.display = 'none';
-    myFavorbooks.style.display ='none';
-    download.style.display ='none';
-}
+    
+    function ShowMyBook(){    
+        for (let i = 0; i < window.localStorage.length; i++) {
+            let res = window.localStorage.getItem(window.localStorage.key(i));	 
+            let image = new  Image();
+            let btnlks = document.createElement("button");
+            let read = document.createElement("button")
+            let fdiv = document.createElement("div");
+            fdiv.innerHTML = "";
+            read.innerHTML = "Read Book"
+            btnlks.innerHTML = "like!";
+            fdiv.setAttribute('class','fDiv thisBook');
+            read.setAttribute('class','readBtn');
+            read.setAttribute('id','read');
+            read.setAttribute('onclick','read()');
+            btnlks.setAttribute('class','liksBtn');
+            btnlks.setAttribute('id','like');
+            btnlks.setAttribute('onclick','likes()');
+            image.src = res;
+            image.setAttribute('class','images');
+            myBooks.append(fdiv)
+            fdiv.append(image);
+            fdiv.append(btnlks);
+            fdiv.append(read);
+    }
+        myBooks.style.display = 'flex';
+        readBooks.style.display = 'none';
+        myFavorbooks.style.display ='none';
+        download.style.display ='none';
+    }
 
 function read(){
+    let keys1 = localStorage.getItem('name');
+    let keys2 = localStorage.getItem('text');
     let parent = document.querySelector('.thisBook');
     let elem1 = parent.querySelector('.images');
     let clon =   elem1.cloneNode(true);
@@ -86,7 +60,8 @@ function read(){
     NewDiv.innerHTML=""
     readBooks.append(NewDiv);
     NewDiv.setAttribute('class','fDiv read')
-    NewDiv.append(clon);
+    NewDiv.append(keys1);
+    NewDiv.append(keys2)
     console.log(2)
 function replace(){
 
@@ -106,7 +81,6 @@ function likes(){
     let elem2= parent.querySelector('.readBtn');
     let clon2 = elem2.cloneNode(true);
     let clon = elem1.cloneNode(true);
-    
     let NewDiv = document.createElement("div");
     NewDiv.innerHTML=""
     myFavorbooks.append(NewDiv);
