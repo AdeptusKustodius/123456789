@@ -138,3 +138,20 @@ width: 100%;
     left: -90px;
     
 } */
+.subdown{
+    visibility:hidden;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.nosee{
+    display: none;
+}
+.see{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+}

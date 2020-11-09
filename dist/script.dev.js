@@ -3,6 +3,7 @@
 var myBooks = document.body.querySelector('.myBooks');
 var myFavorbooks = document.body.querySelector('.favorBooks');
 var readBooks = document.body.querySelector('.readBook');
+var download = document.body.querySelector('.download');
 
 function uploadImage(event) {
   var reader = new FileReader();
@@ -11,10 +12,11 @@ function uploadImage(event) {
     if (this.result && localStorage) {
       window.localStorage.setItem(name, this.result);
     } else {
-      alert('не работает блеать!!!!');
+      alert('не работает ');
     }
   });
   reader.readAsDataURL(event.target.files[0]);
+  console.log('unload');
 }
 
 function ShowMyBook() {
@@ -57,6 +59,7 @@ function ShowMyBook() {
   myBooks.style.display = 'flex';
   readBooks.style.display = 'none';
   myFavorbooks.style.display = 'none';
+  download.style.display = 'none';
 }
 
 function read() {
@@ -69,6 +72,17 @@ function read() {
   NewDiv.setAttribute('class', 'fDiv read');
   NewDiv.append(clon);
   console.log(2);
+
+  function replace() {
+    console.log('алярма!');
+    var frame = document.createElement('iframe');
+    frame.setAttribute('src', 'clon');
+    frame.setAttribute('name', 'readingFrame');
+    frame.innerHTML = NewDiv.append(clon);
+    NewDiv.parentNode.replaceChild(frame, NewDiv);
+  }
+
+  setTimeout(replace(), 100);
 }
 
 function likes() {
@@ -86,14 +100,40 @@ function likes() {
   console.log(1);
 }
 
+function down() {
+  myBooks.style.display = 'none';
+  myFavorbooks.style.display = 'none';
+  readBooks.style.display = 'none';
+  download.style.visibility = 'visible';
+  download.style.display = 'flex';
+}
+
 function readBook() {
   myBooks.style.display = 'none';
   myFavorbooks.style.display = 'none';
   readBooks.style.display = 'flex';
+  download.style.visibility = 'hidden';
 }
 
 function ShowMyFavorBook() {
   myBooks.style.display = 'none';
   readBooks.style.display = 'none';
   myFavorbooks.style.display = 'flex';
+  download.style.visibility = 'hidden';
 }
+
+function checket1() {
+  var a = document.querySelector('.showMe2');
+  var b = document.querySelector('.showMe1');
+  b.style.visibility = 'visible';
+  a.style.visibility = 'hidden';
+}
+
+function checket2() {
+  var c = document.querySelector('.showMe1');
+  var d = document.querySelector('.showMe2');
+  d.style.visibility = 'visible';
+  c.style.visibility = 'hidden';
+}
+
+checket1();
