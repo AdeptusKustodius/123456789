@@ -63,7 +63,16 @@ function read(){
     NewDiv.setAttribute('class','fDiv read')
     NewDiv.append(clon);
     console.log(2)
+function replace(){
 
+    console.log('алярма!')
+    // let frame = document.createElement('iframe');
+    // frame.setAttribute('src', 'clon')
+    // frame.setAttribute('name','readingFrame')
+    // frame.innerHTML = NewDiv.append(clon);
+    // NewDiv.parentNode.replaceChild(frame, NewDiv);
+}
+ setTimeout(replace(), 100);
 }
 
 function likes(){
