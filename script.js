@@ -14,38 +14,38 @@ let formWrite = document.querySelector('input[name=writing]');
 
 
 function upload(){
-    let message = {
+    let message = {// вывод результата загрузки
         loading: 'Загрузка...',
         success: 'Спасибо! Скоро мы с Вами свяжемся!',
         failure: 'Что-то пошло не так...'
     };
-    let forms = document.querySelectorAll('form'),
-        statusMessage = document.createElement('div');
+    let forms = document.querySelectorAll('form'), // получение элементов с тега form
+        statusMessage = document.createElement('div'); 
         localStorage.setItem('key',statusMessage);
         statusMessage.classList.add('status');
     
-    forms.forEach(item => {
+    forms.forEach(item => { // перебор массива полученного с inputa
         let inputs = item.getElementsByTagName('input');
     
-        item.addEventListener('submit', function(event) {
-            event.preventDefault();
-            item.appendChild(statusMessage);
+        item.addEventListener('submit', function(event) { 
+            event.preventDefault(); 
+            item.appendChild(statusMessage); // добавление значения item в дим statuMessage
     
-            let request = new XMLHttpRequest();
-            request.open('POST', 'item/uploadFiles/php.php');
-            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            let request = new XMLHttpRequest(); // передача данных по XMLреквест
+            request.open('POST', 'item/uploadFiles/php.php');// метод POST по URL
+            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // шапка отрпавляемой формы
             let formData = new FormData(item);
-            request.send(formData);
+            request.send(formData);// отправка заполненной формы
             
-            request.addEventListener('readystatechange', function() {
+            request.addEventListener('readystatechange', function() { // запрос результат получения формы
                 if (request.readyState < 4) {
-                    statusMessage.innerHTML = message.loading;
-                } else if (request.readyState === 4 && request.status === 200) {
-                    statusMessage.innerHTML = message.success;
-                } else statusMessage.innerHTML = message.failure;
+                    statusMessage.innerHTML = message.loading; // загружается
+                } else if (request.readyState === 4 && request.status === 200) {// проверка следующих состояний
+                    statusMessage.innerHTML = message.success;// успешно загружен
+                } else statusMessage.innerHTML = message.failure; // ошибка
             });
     
-            for (let i = 0; i < inputs.length; i++) {
+            for (let i = 0; i < inputs.length; i++) {// перебор данных формы
                 inputs[i].value = '';
             }
         });
