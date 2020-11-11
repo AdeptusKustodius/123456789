@@ -4,30 +4,29 @@ let myFavorbooks = document.body.querySelector('.favorBooks');
 let readBooks = document.body.querySelector('.readBook')
 let download = document.body.querySelector('.download')
 
-let formLogin = document.forms.login;
-let formFile  = document.forms.file;
-let formWrite = document.forms.writing;
+let formLogin = document.querySelector('input[name=login]');
+let formFile  = document.querySelector('input[name=file]');
+let formWrite = document.querySelector('input[name=writing]');
+
+
 function upload(){
-console.log(formLogin);
-console.log(formFile);
+let data = new FormData();
+data.set ('textFile', formFile[0])
+data.set ('login', formLogin)
+data.set ('write', formWrite)
+fetch ('item/uploadFiles',{ 
+method:'POST', 
+body: data }
+
+)
+let result;
+console.log(formLogin.value);
+console.log(formFile.type);
 console.log(formWrite);
+console.log(result)
 
 }
 
-async function upload(){
-let imgSet = await new Promise(resolve => formFile.toBlob(resolve, 'item/uploadFiles'));
-
-let formData = new FormData()
-formData.set('login',formLogin);
-formData.set('text',imgSet,'text.txt');
-
-let response = await fetch('/item/uploadFiles',{
-    method:'POST',
-    body:formData
-})
-let result = await response.json();
-console.log(result.message);
-}
 function ShowMyBook(){
     myBooks.style.display = 'flex';
     readBooks.style.display = 'none';

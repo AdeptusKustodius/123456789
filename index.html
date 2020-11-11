@@ -27,7 +27,7 @@
                         
                            <p> <input type="radio" name="panel" onclick="checket1()" id="myFileDown" value="downLoad" checked ><label for="myFileDown">Загрузить</label></p>
                         </p>
-                        <form id="formElem" enctype="multipart/form-data"  method="POST" action="@{/item/uploadFiles">
+                        <form id="formElem" name="formElem"enctype="multipart/form-data"  method="POST" action="@{/item/uploadFiles">
                             
                             <p class="showMe1">
                                 <input type="text" name="login" placeholder="Login">
