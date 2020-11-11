@@ -10,20 +10,56 @@ let formWrite = document.querySelector('input[name=writing]');
 
 
 function upload(){
-let data = new FormData();
-data.set ('textFile', formFile[0])
-data.set ('login', formLogin)
-data.set ('write', formWrite)
-fetch ('item/uploadFiles',{ 
-method:'POST', 
-body: data }
+    let message = {
+        loading: 'Загрузка...',
+        success: 'Спасибо! Скоро мы с Вами свяжемся!',
+        failure: 'Что-то пошло не так...'
+    };
+    let forms = document.querySelectorAll('form'),
+        statusMessage = document.createElement('div');
+        localStorage.setItem('key',statusMessage);
+        statusMessage.classList.add('status');
+    
+    forms.forEach(item => {
+        let inputs = item.getElementsByTagName('input');
+    
+        item.addEventListener('submit', function(event) {
+            event.preventDefault();
+            item.appendChild(statusMessage);
+    
+            let request = new XMLHttpRequest();
+            request.open('POST', 'item/uploadFiles/php.php');
+            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            let formData = new FormData(item);
+            request.send(formData);
+            
+            request.addEventListener('readystatechange', function() {
+                if (request.readyState < 4) {
+                    statusMessage.innerHTML = message.loading;
+                } else if (request.readyState === 4 && request.status === 200) {
+                    statusMessage.innerHTML = message.success;
+                } else statusMessage.innerHTML = message.failure;
+            });
+    
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
+            }
+        });
+    });
+// let data = new FormData();
+// data.set ('textFile', formFile[0])
+// data.set ('login', formLogin)
+// data.set ('write', formWrite)
+// fetch ('../item/uploadFiles/php.php',{ 
+// method:'POST', 
+// body: data }
 
-)
-let result;
+// )
+// let result;
 console.log(formLogin.value);
 console.log(formFile.type);
 console.log(formWrite);
-console.log(result)
+console.log(forms)
 
 }
 
