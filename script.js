@@ -9,6 +9,10 @@ let formFile  = document.querySelector('input[name=file]');
 let formWrite = document.querySelector('input[name=writing]');
 
 
+
+
+
+
 function upload(){
     let message = {
         loading: 'Загрузка...',
@@ -64,6 +68,34 @@ console.log(forms)
 }
 
 function ShowMyBook(){
+    let span = document.querySelector('.fDiv');
+
+    for (let i = 0; i < window.localStorage.length; i++) {
+        let res = window.localStorage.getItem(window.localStorage.key(i));	 
+        let image = new  Image();
+        let btnlks = document.createElement("button");
+        let read = document.createElement("button")
+        let fdiv = document.createElement("div");
+        fdiv.innerHTML = "";
+        read.innerHTML = "Read Book"
+        btnlks.innerHTML = "like!";
+        fdiv.setAttribute('class','fDiv thisBook');
+        read.setAttribute('class','readBtn');
+        read.setAttribute('id','read');
+        read.setAttribute('onclick','read()');
+        btnlks.setAttribute('class','liksBtn');
+        btnlks.setAttribute('id','like');
+        btnlks.setAttribute('onclick','likes()');
+        image.src = res;
+        image.setAttribute('class','images');
+        myBooks.append(fdiv)
+        fdiv.append(image);
+        fdiv.append(btnlks);
+        fdiv.append(read);
+}
+
+
+
     myBooks.style.display = 'flex';
     readBooks.style.display = 'none';
     myFavorbooks.style.display ='none';
