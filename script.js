@@ -13,7 +13,7 @@ let formWrite = document.querySelector('input[name=writing]');
 
 
 
-function upload(){
+id2.onclick=function (){
     let message = {// вывод результата загрузки
         loading: 'Загрузка...',
         success: 'Спасибо! Скоро мы с Вами свяжемся!',
